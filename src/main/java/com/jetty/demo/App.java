@@ -36,7 +36,7 @@ public class App {
 		resourceHandler.setDirectoriesListed(true);
 		resourceHandler.setWelcomeFiles(new String[] { "index.html" });
 
-		resourceHandler.setResourceBase("/Users/fengchuang1/eclipse-workspace/jetty-demo/src/main/resources/");
+		resourceHandler.setResourceBase("src/main/resources/");
 
 		HandlerCollection handlers = new HandlerCollection();
 		handlers.setHandlers(new Handler[] { resourceHandler, context, new DefaultHandler() });
